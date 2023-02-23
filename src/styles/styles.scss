@@ -13,6 +13,10 @@ img {
     max-width: 100%;
 }
 
+body {
+    font-family: 'Gill';
+}
+
 $types: alkaliMetal lanthanide nobleGas transitionMetal postTransitionMetal alkalineEarthMetal actinide metalloid otherNonMetal;
 $colors: skyblue pink cyan peru darkgray gold lightgreen firebrick mediumvioletred;
 
@@ -24,10 +28,20 @@ $colors: skyblue pink cyan peru darkgray gold lightgreen firebrick mediumvioletr
     }
 }
 
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.title__text {
+    font-size: 5rem;
+}
+
 .element {
     background-color: lightgray;
     padding: 10px;
-    font-family: 'Gill';
     text-align: center;
     font-size: 2rem;
     display: flex;
