@@ -20,8 +20,6 @@ body {
 $types: alkaliMetal lanthanide nobleGas transitionMetal postTransitionMetal alkalineEarthMetal actinide metalloid otherNonMetal;
 $colors: skyblue pink cyan peru darkgray gold lightgreen firebrick mediumvioletred;
 
-@debug nth($types,1);
-
 @mixin wide {
     @media (min-width:87.5em){
         @content;
@@ -76,7 +74,7 @@ $colors: skyblue pink cyan peru darkgray gold lightgreen firebrick mediumvioletr
 
 @for $i from 1 through 18 {
     .element[data-group="#{$i}"]{
-        grid-column: $i;
+            grid-column: $i;
     }
 }
 
